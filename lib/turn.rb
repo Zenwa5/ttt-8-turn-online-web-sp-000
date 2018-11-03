@@ -12,23 +12,20 @@ return converted_input - 1
 end
 
 def position_taken?(board, index)
-  if board[index] == " " || board[index] == "" || board[index] == "nil"
-    return false
-  end
-  if board[index] == "X" || board[index] == "O"
+  if (board[index] == "X" || board[index] ==  "O")
     return true
+  elsif (board[index] == " " || board[index] == "" || board[index] == nil)
+    return false
   end
 end
 
 def valid_move?(board, index)
-  if position_taken?(board, index) == false && board[index] = " "
+  if ((position_taken?(board, index) == false) && (index.between?(0,8) == true))
     return true
+  else
+    return false
   end
-if board[index] == "O" || board[index] == "X"
-  return nil
 end
-end
-
 
 
 def move(board, index, character = "X")
