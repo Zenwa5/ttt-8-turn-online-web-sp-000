@@ -36,3 +36,4 @@ def turn(board)
   puts "Please enter 1-9:"
   turn(board) = gets.strip
 end
+end
