@@ -10,8 +10,8 @@ def valid_move?(board, index)
   if position_taken?(board, index) == false && board[index] = " "
     return true
   end
-if  if (board[index] == "X" || board[index] ==  "O")
-  return nil
+if (board[index] == "X" || board[index] ==  "O")
+  return n
 end
 end
 
