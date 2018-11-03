@@ -39,4 +39,3 @@ input_to_index(user_input)
   until user_input.between(0,8)
     turn(board)
 end
-
