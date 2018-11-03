@@ -4,4 +4,5 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 puts "Welcome to Tic Tac Toe!"
 display_board(board)
 turn(board)
-until input_to_index(user_input) = true
+input_to_index(user_input)
+valid_move?(board, index)
