@@ -38,4 +38,3 @@ def turn(board)
 input_to_index(user_input)
   until user_input == true
 end
-
