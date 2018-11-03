@@ -6,6 +6,15 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
+def position_taken?(board, index)
+  if board[index] == " " || board[index] == "" || board[index] == "nil"
+    return false
+  end
+  if board[index] == "X" || board[index] == "O"
+    return true
+  end
+end
+
 def valid_move?(board, index)
   if position_taken?(board, index) == false && board[index] = " "
     return true
@@ -15,14 +24,6 @@ if position_taken?(board, index) == true || board[index] == "X"
 end
 end
 
-def position_taken?(board, index)
-  if board[index] == " " || board[index] == "" || board[index] == "nil"
-    return false
-  end
-  if board[index] == "X" || board[index] == "O"
-    return true
-  end
-end
 
 def input_to_index(user_input)
 converted_input = "#{user_input}".to_i
