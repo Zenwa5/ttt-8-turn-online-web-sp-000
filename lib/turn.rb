@@ -38,6 +38,6 @@ def turn(board)
 input_to_index(user_input)
 end
 
-until valid_move?
+until valid_move?(board, index)
   turn(board)
 end
